@@ -1,0 +1,198 @@
+{
+  "itemConfig": [
+    {
+      "showName": "VersionInfo"
+    },
+    {
+      "showName": "KeyPad"
+    },
+    {
+      "showName": "Vibrator",
+      "paramconfig": {
+        "is_auto_vibrate": false
+      }
+    },
+    {
+      "showName": "LCD",
+      "action": "com.mmigroup.action.LCDUP",
+      "support": true,
+      "automatic": false,
+      "support_autoTest_autopass": false,
+      "paramconfig": {
+        "auto_switch": false,
+        "first_three_delay": 2000,
+        "lcd_pic": [
+          "R=2000",
+          "G=2000",
+          "B=2000",
+          "L255=2000",
+          "L64=2000",
+          "L0=2000",
+          "Transition_Gray=2000"
+        ]
+      }
+    },
+    {
+      "showName": "MainCamera"
+    },
+    {
+      "showName": "MainCamera2"
+    },
+    {
+      "showName": "PlatCameraZoom"
+    },
+    {
+      "showName": "Wide_angleCamera"
+    },
+    {
+      "showName": "FrontCamera"
+    },
+    {
+      "showName": "LightTEST"
+    },
+    {
+      "showName": "Speaker"
+    },
+    {
+      "showName": "Receiver"
+    },
+    {
+      "showName": "MainMicToReceiver"
+    },
+    {
+      "showName": "SubMicToSpeaker"
+    },
+    {
+      "showName": "HeadSet",
+      "paramconfig": {
+        "keyCode": [
+          "HEADSETHOOK"
+        ]
+      }
+    },
+    {
+      "showName": "HsMicToHeadPhone"
+    },
+    {
+      "showName": "FM"
+    },
+    {
+      "showName": "TouchPal"
+    },
+    {
+      "showName": "TpOpenShort"
+    },
+    {
+      "showName": "Battery",
+      "paramconfig": {
+        "support_typec_check": true
+      }
+    },
+    {
+      "showName": "SdCard",
+      "support_background_test": true
+    },
+    {
+      "showName": "DualSIMCard",
+      "support_background_test": false
+    },
+    {
+      "showName": "Wlan",
+      "support_background_test": true
+    },
+    {
+      "showName": "Bluetooth",
+      "support_background_test": true
+    },
+    {
+      "showName": "GPS",
+      "support_background_test": true
+    },
+    {
+      "showName": "OTG"
+    },
+    {
+      "showName": "Accelerometer_C",
+      "paramconfig": {
+        "support_calibrate": true,
+        "support_axialresult": true,
+        "support_angle45": true,
+        "support_angleneg45": true,
+        "is_auto_calibrate": false,
+        "support_plus_or_minus_45_degrees_either_pass_through": false,
+        "autoTest": {
+        }
+      }
+    },
+    {
+      "showName": "Optical"
+    },
+    {
+      "showName": "Proximity_C",
+      "action": "com.mmigroup.action.PROXIMITY_SS",
+      "paramconfig": {
+        "distance_tolerance": 0.5,
+        "do_calibration": {
+          "support": true,
+          "calibration_apply": true,
+          "calibration_scheme": "SS_qcom",
+          "4_cm_minus_no_cover_min": 0,
+          "3_cm_minus_no_cover_min": 0,
+          "3_cm_minus_4_cm_min": 0,
+          "3_cm": {
+            "min": 0,
+            "max": 99999
+          },
+          "3_cm_offset": {
+            "min": 100,
+            "max": 99999
+          },
+          "4_cm": {
+            "min": 0,
+            "max": 99999
+          },
+          "noCover": {
+            "min": 0,
+            "max": 8000
+          },
+          "tpmodel_table": {
+            "default": {
+              "ALL": 0.36
+            }
+          }
+        }
+      }
+    },
+    {
+      "showName": "fingerprint"
+    },
+    {
+      "showName": "Proximity"
+    },
+    {
+      "showName": "Gyroscope_C",
+      "support": true,
+      "action": "com.mmigroup.action.GYROSCOPE_C",
+      "automatic": true,
+      "paramconfig": {
+        "support_calibrate": true,
+        "support_test": true,
+        "gyroscope_tolerance": 9,
+        "is_auto_calibrate": false
+      }
+    },
+    {
+      "showName": "Magnetic",
+      "paramconfig": {
+        "magnetism_tolerance": 0.1,
+        "self_calibrate": true,
+        "support_test": true,
+        "support_draw": true,
+        "support_calibrate": true
+      }
+    },
+    {
+      "showName": "Sar"
+    }
+  ]
+}

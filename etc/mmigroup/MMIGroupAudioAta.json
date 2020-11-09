@@ -1,0 +1,63 @@
+{
+  "itemConfig": [
+    {
+      "showName": "Speaker",
+      "paramconfig": {
+        "is_show_list": false,
+        "volume_rate": 0.93,
+        "isPlayOnce": true,
+        "music_file": "/vendor/etc/mmigroup/spk.wav",
+        "audioConfig": [
+          "mmitest=on;outputdevice=speaker_max"
+        ]
+      }
+    },
+    {
+      "showName": "Receiver",
+      "paramconfig": {
+        "is_show_list": false,
+        "isPlayOnce": true,
+        "music_file": "/vendor/etc/mmigroup/rec.wav",
+        "audioConfig": [
+          "mmitest=on;outputdevice=receiver_max"
+        ]
+      }
+    },
+    {
+      "showName": "MainMic",
+      "paramconfig": {
+        "audioConfig": [
+          "mmitest=on;inputdevice=mainmic_ata"
+        ]
+      }
+    },
+    {
+      "showName": "SubMic",
+      "paramconfig": {
+        "audioConfig": [
+          "mmitest=on;inputdevice=submic_ata"
+        ]
+      }
+    },
+    {
+      "showName": "Vibrator",
+      "paramconfig": {
+        "is_auto_vibrate": true,
+        "randomVibSupport": false
+      }
+    },
+    {
+      "showName": "HsMicToHeadPhone",
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "support": true,
+      "paramconfig": {
+        "volume_rate": 0.5,
+        "hasHeadPhone": true,
+        "loop_type": "none",
+        "audioConfig": [
+          "mmitest=on;loopline=hsmic_headphone"
+        ]
+      }
+    }
+  ]
+}

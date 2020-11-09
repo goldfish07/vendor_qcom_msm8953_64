@@ -1,0 +1,230 @@
+{
+  "systemConfig": {
+  "SW_Ver": false,
+  "SS_ver": true
+  },
+  "itemConfig": [
+    {
+      "showName": "VersionInfo",
+      "paramconfig": {
+        "AddInfo": {
+          "SecureBoot": "any",
+          "TPcolor": "any",
+          "CPUID": "any",
+          "TP": "any",
+          "RPMB": "any",
+          "CameraInfo": "any",
+          "BuildNumber": "any",
+          "BaseBandVersion": "any",
+          "KernelVersion": "any",
+          "LCM": "any",
+          "verifiedbootstate": "green",
+          "System_Verity": "true"
+        }
+      }
+    },
+    {
+      "showName": "MainMicToReceiver"
+    },
+    {
+      "showName": "KeyPad",
+      "paramconfig": {
+        "keyCode": [
+          "VOLUME_UP",
+          "VOLUME_DOWN"
+        ]
+      }
+    },
+    {
+      "showName": "Vibrator",
+      "paramconfig": {
+        "is_auto_vibrate": false
+      }
+    },
+    {
+      "showName": "LCD",
+      "action": "com.mmigroup.action.LCD",
+      "support": true,
+      "automatic": false,
+      "support_autoTest_autopass": false,
+      "paramconfig": {
+        "auto_switch": false,
+        "first_three_delay": 2000,
+        "lcd_pic": [
+          "R=2000",
+          "G=2000",
+          "B=2000",
+          "L255=2000",
+          "L64=2000",
+          "L0=2000",
+          "Transition_Gray=2000"
+        ]
+      }
+    },
+    {
+      "showName": "Speaker"
+    },
+    {
+      "showName": "MainCamera"
+    },
+    {
+      "showName":"MainCamera2"
+    },
+    {
+      "showName":"PlatCameraZoom"
+    },
+    {
+      "showName": "Wide_angleCamera"
+    },
+    {
+      "showName": "FrontCamera"
+    },
+    {
+      "showName": "Receiver"
+    },
+    {
+      "showName": "LightTEST"
+    },
+    {
+      "showName": "HeadSet",
+      "paramconfig": {
+        "keyCode": [
+          "HEADSETHOOK"
+        ]
+      }
+    },
+    {
+      "showName": "HsMicToHeadPhone"
+    },
+    {
+      "showName": "FM"
+    },
+    {
+      "showName": "TouchPal"
+    },
+    {
+      "showName": "SubMicToSpeaker"
+    },
+    {
+      "showName": "TpOpenShort"
+    },
+    {
+      "showName": "Battery",
+      "paramconfig": {
+        "support_typec_check": true
+      }
+    },
+    {
+      "showName": "SdCard",
+      "support_background_test": true
+    },
+    {
+      "showName": "DualSIMCard",
+      "support_background_test": true
+    },
+    {
+      "showName": "Wlan",
+      "support_background_test": true
+    },
+    {
+      "showName": "Bluetooth",
+      "support_background_test": true
+    },
+    {
+      "showName": "GPS",
+      "support_background_test": true
+    },
+    {
+      "showName": "OTG"
+    },
+    {
+      "showName": "Accelerometer",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_axialresult": true,
+        "support_angle45": true,
+        "support_angleneg45": true,
+        "is_auto_calibrate": false,
+        "support_plus_or_minus_45_degrees_either_pass_through": false,
+        "autoTest": {
+          "support_calibrate": false
+        }
+      }
+    },
+    {
+      "showName": "Optical"
+    },
+    {
+      "showName": "Proximity",
+      "action": "com.mmigroup.action.PROXIMITY_SS",
+      "paramconfig": {
+        "distance_tolerance": 0.5,
+        "rawData": {
+          "min": 0,
+          "max": 5000
+        },
+        "do_calibration": {
+          "support": false,
+          "calibration_apply": true,
+          "calibration_scheme": "SS_qcom",
+          "4_cm_minus_no_cover_min": 5,
+          "3_cm_minus_no_cover_min": 20,
+          "3_cm_minus_4_cm_min": 8,
+          "3_cm": {
+            "min": 0,
+            "max": 99999
+          },
+          "3_cm_offset": {
+            "min": 400,
+            "max": 99999
+          },
+          "4_cm": {
+            "min": 0,
+            "max": 99999
+          },
+          "noCover": {
+            "min": 0,
+            "max": 8000
+          },
+          "tpmodel_table": {
+            "default": {
+              "ALL": 0.36
+            }
+          }
+        }
+      }
+    },
+    {
+      "showName": "Gyroscope",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_test": true,
+        "gyroscope_tolerance": 9,
+        "is_auto_calibrate": false
+      }
+    },
+    {
+      "showName": "Magnetic",
+      "paramconfig": {
+        "magnetism_tolerance": 0.1,
+        "support_draw": true,
+        "support_test": true,
+        "self_calibrate": false,
+        "support_calibrate": true
+      }
+    },
+    {
+      "showName": "fingerprint",
+      "paramconfig": {
+        "is_need_nextButton": false,
+        "support_selfTest": true,
+        "support_checkBoardTest": true,
+        "support_enrolTest": false,
+        "support_identifyTest": false
+      }
+    },
+    {
+      "showName": "Sar"
+    }
+  ]
+}

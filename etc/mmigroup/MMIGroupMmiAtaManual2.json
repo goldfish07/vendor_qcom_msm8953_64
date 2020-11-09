@@ -1,0 +1,26 @@
+{
+  "itemConfig": [
+    {
+      "showName": "VersionInfo"
+    },
+    {
+      "showName": "Magnetic",
+      "paramconfig": {
+        "magnetism_tolerance": 0.1,
+        "self_calibrate": true,
+        "support_test": true,
+        "support_draw": true,
+        "support_calibrate": true
+      }
+    },
+    {
+      "showName": "Battery",
+      "paramconfig": {
+        "support_typec_check": true
+      }
+    },
+    {
+      "showName": "Sar"
+    }
+  ]
+}
